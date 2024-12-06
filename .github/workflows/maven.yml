@@ -30,7 +30,7 @@ jobs:
           persist-credentials: false
 
       # Étape 2 : Mise en cache du dossier Maven pour accélérer les builds
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4
         with:
           path: ~/.m2/repository
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
