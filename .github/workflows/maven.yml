@@ -50,7 +50,7 @@ jobs:
 
       # Étape 5 : Analyse SonarCloud
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@v1
+        uses: SonarSource/sonarcloud-github-action@v5
         with:
           sonar-token: ${{ secrets.SONAR_TOKEN }}
         env:
